@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-area: a;
+        align-self: center;
+        justify-self: center;
+      }
+      button {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+      }
+      input {
+        grid-column: 1 / span 4;
+      }
+
+      .red {
+        grid-column: 1 / span 2;
+        color: white;
+        background-color: red;
+      }
+      .blue {
+        background-color: lightskyblue;
+        color: white;
+      }
+      .operator {
+        background-color: orange;
+        color: white;
+      }
+      .alala {
+        background-color: grey;
+        color: white;
+      }
+      .hasil {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; text-transform: uppercase; color: brown">
+      Calculator by Abib!
+    </h1>
+    <p></p>
+    <div class="grid-container">
+      <input type="text" name="display" />
+      <button class="red">AC</button>
+      <button class="blue">C</button>
+      <button class="operator">*</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">/</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">+</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">-</button>
+      <button class="alala">+-</button>
+      <button>0</button>
+      <button class="alala">.</button>
+      <button class="hasil">=</button>
+    </div>
+  </body>
+</html>
