@@ -1,0 +1,38 @@
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+input {
+  grid-column: 1 / span 4;
+}
+
+.red {
+  grid-column: 1 / span 2;
+  color: white;
+  background-color: red;
+}
+.blue {
+  background-color: lightskyblue;
+  color: white;
+}
+.operator {
+  background-color: orange;
+  color: white;
+}
+.alala {
+  background-color: grey;
+  color: white;
+}
+.hasil {
+  background-color: green;
+  color: white;
+}
